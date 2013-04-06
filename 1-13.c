@@ -53,8 +53,10 @@ int main()
 			printf(">%d: (%5.0f) ", LIMIT, nwords[i]);
 		for (nwords[i] = nwords[i] / max; nwords[i] > 1.0; --nwords[i])
 			putchar('|');
-		if (nwords[i] > 0.5)
+		if (nwords[i] > 0.665)
 			putchar(':');
+		else if (nwords[i] > 0.332)
+			putchar('.');
 		putchar('\n');
 	}
 }
