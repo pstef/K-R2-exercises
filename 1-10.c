@@ -18,18 +18,15 @@ int main()
 	print = 1;
 	while ((c = getchar()) != EOF) {
 		if (c == '\t') {
-			putchar('\\');
-			putchar('t');
+			printf("\\t");
 			print = 0;
 		}
 		if (c == '\b') {
-			putchar('\\');
-			putchar('b');
+			printf("\\b");
 			print = 0;
 		}
 		if (c == '\\') {
-			putchar('\\');
-			putchar('\\');
+			printf("\\\\");
 			print = 0;
 		}
 		if (print == 1)
